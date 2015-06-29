@@ -22,7 +22,9 @@ class Known extends Plugin {
 	function hook_article_button($line) {
 		$article_id = $line["id"];
 
-		$rv = "<img style=\"height: 1.5em\" src=\"plugins/known/known.png\"
+		$rv = "<img height=\"16px\" 
+			width=\"16px\" 
+			src=\"plugins/known/known.png\"
 			class='tagsPic' style=\"cursor : pointer\"
 			onclick=\"knownArticle($article_id)\"
 			title='".__('Share on Known')."'>";
