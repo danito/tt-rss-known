@@ -1,4 +1,4 @@
-	function KnownArticle(id) {
+	function knownArticle(id) {
 	try {
 		var query = "?op=pluginhandler&plugin=known&method=getInfo&id=" + param_escape(id);
 
