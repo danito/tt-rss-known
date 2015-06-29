@@ -1,6 +1,6 @@
-	function tumblrArticle(id) {
+	function KnownArticle(id) {
 	try {
-		var query = "?op=pluginhandler&plugin=tumblr&method=getInfo&id=" + param_escape(id);
+		var query = "?op=pluginhandler&plugin=known&method=getInfo&id=" + param_escape(id);
 
 		console.log(query);
 
@@ -14,10 +14,9 @@
 			parameters: query,
 			onComplete: function(transport) {
 				var ti = JSON.parse(transport.responseText);
-
-				var share_url = "http://www.tumblr.com/share?s=&v=3" +
-					"&t=" + param_escape(ti.title) +
-					"&u=" + param_escape(ti.link);
+				var share_url = "https://nxd4n.nixekinder.be/share?" +
+					"share_title=" + param_escape(ti.title) +
+					"&share_url=" + param_escape(ti.link);
 
 				w.location.href = share_url;
 
