@@ -11,7 +11,7 @@ class Known extends Plugin {
 	function about() {
 		return array(1.1,
 			"Share article on Known (templated from Twitter plugin)",
-			"nxd4n",
+			"epyon_avenger",
 			false);
 	}
 
@@ -23,8 +23,8 @@ class Known extends Plugin {
 		$article_id = $line["id"];
 
 		$rv = "<img src=\"plugins/known/known.png\"
-			class='tagsPic' style=\"cursor : pointer; height:1.5em;\"
-			onclick=\"knownArticle($article_id)\"
+			class='tagsPic' style=\"cursor : pointer\"
+			onclick=\"KnownArticle($article_id)\"
 			title='".__('Share on Known')."'>";
 
 		return $rv;
