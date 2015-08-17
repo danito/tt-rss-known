@@ -14,7 +14,7 @@
 			parameters: query,
 			onComplete: function(transport) {
 				var ti = JSON.parse(transport.responseText);
-				var share_url = "https://nxd4n.nixekinder.be/share?" +
+				var share_url = "https:/url.to.your.KnownSite/share?" +
 					"share_title=" + param_escape(ti.title) +
 					"&share_url=" + param_escape(ti.link);
 
