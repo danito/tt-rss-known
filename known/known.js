@@ -14,6 +14,8 @@
 			parameters: query,
 			onComplete: function(transport) {
 				var ti = JSON.parse(transport.responseText);
+				
+				// edit the following line to match your site
 				var share_url = "https:/url.to.your.KnownSite/share?" +
 					"share_title=" + param_escape(ti.title) +
 					"&share_url=" + param_escape(ti.link);
